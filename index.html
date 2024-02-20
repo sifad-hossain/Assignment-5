@@ -12,22 +12,18 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Custom CSS -->
-<link rel="stylesheet" href="./style/styles.css">
+  <link rel="stylesheet" href="./style/styles.css">
 </head>
 
 <body class="w-[100%] mx-auto ">
 
+  <section id="bus-container" class="">
   <header class="w-3/4 mx-auto">
     <div class="navbar bg-base-100">
       <div class="navbar-start">
         <div class="dropdown">
-          <!-- <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-          </div> -->
           <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-          
-           
-              
+
         </div>
         <a class="btn btn-ghost text-4xl font-bold raleway-font">P-Ticket</a>
       </div>
@@ -37,12 +33,10 @@
           <li class="text-lg font-medium raleway-font"><a>About</a></li>
           <li class="text-lg font-medium raleway-font"><a>Destination</a></li>
           <li class="text-lg font-medium raleway-font"><a>Search</a></li>
-          
-        
         </ul>
       </div>
       <div class="navbar-end  ">
-       
+
         <a class="btn text-[#1dd100] text-base font-medium raleway-font">Bus</a>
         <img src="./images/bus-icon.png" alt="">
       </div>
@@ -53,6 +47,7 @@
   <!-- main section -->
   <main>
     <!-- Tickets title -->
+   
     <div class="hero h-[550px] w-3/4 mx-auto" style="background-image: url(./images/banner.png);">
 
       <div class="hero-content text-center text-neutral-content">
@@ -61,38 +56,32 @@
               Paribahan</span> </h1>
           <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated
             testing features allow for a streamlined .</p>
-          <button class="btn btn-primary bg-[#1dd100] border-green-400 text-black hover:bg-[#1dd100]"> Buy
-            Tickets</button>
+          <button onclick="buyTicket()" class="btn btn-primary bg-[#1dd100] border-green-400 text-black hover:bg-[#1dd100]"> Buy Tickets</button>
         </div>
       </div>
     </div>
 
     <!-- Coupn Card Section -->
-
-
-    <section class=" mt-16">
+    
+    <div class=" mt-16">
       <div class="text-center text-4xl font-bold">
         <h2>Best offers for you</h2>
       </div>
       <div class="w-[75%] flex mx-auto  gap-x-5 mt-10">
 
-        
-
         <div class="w-[49%]   h-[220px] flex justify-around items-center 
         bg-[#ffbf0f] spy">
-          <div class="space-y-1 border-r-4 border-dotted w-[50%]">            
+          <div class="space-y-1 border-r-4 border-dotted w-[50%]">
             <p class="text-black text-lg font-medium inter-font">15% OFF</p>
             <p class="">on your next purchase</p>
-           <p class="">use by January 2024</p>            
+            <p class="">use by January 2024</p>
           </div>
 
           <div class="space-y-1">
-           <p class="text-xl font-medium raleway-font"> NEW15</p>
+            <p class="text-xl font-medium raleway-font"> NEW15</p>
             <p>Coupon Code</p>
           </div>
         </div>
-
-
 
         <div class="w-[49%]  h-[220px] flex justify-around items-center 
         bg-[#f78c9c] ">
@@ -103,20 +92,22 @@
           </div>
 
           <div class="space-y-1">
-           <h1 class="text-xl font-medium raleway-font">Couple 20</h1>
-           <p class="">Coupon Code</p>
+            <h1 class="text-xl font-medium raleway-font">Couple 20</h1>
+            <p class="">Coupon Code</p>
           </div>
-        </div>       
+        </div>
       </div>
 
       <div class="flex justify-center mt-10">
         <button class="btn btn-outline btn-success text-[#1dd100] font-bold text-base">See All Offers</button>
       </div>
-    </section>
+    </div>
 
+  </section>
 
+  
     <!-- Bus Poribhon -->
-    <section>
+    <section id="ticket-sale" class="hidden">
       <div class="w-3/4  mx-auto  mt-20">
         <div class=" items-center text-center">
           <h1 class="text-4xl font-semibold">P.H Paribahan</h1>
@@ -124,10 +115,7 @@
             directly within the app. The integrated <br> testing features allow for a streamlined .</p>
         </div>
         <div class="flex mx-auto  mt-10 ">
-
-
           <div class=" w-[70%] flex justify-between  mt-10  ">
-
             <div class="gap-14">
               <div class=" flex  justify-between">
                 <div class="flex gap-6 justify-between">
@@ -169,11 +157,7 @@
                   <button class="btn btn-outline btn-secondary text-base font-medium">Est. Time - 11 Hour</button>
                 </div>
               </div>
-
             </div>
-
-
-
           </div>
           <div class=" w-[30%] mx-auto  m-auto">
             <div class="flex justify-center">
@@ -186,11 +170,11 @@
           </div>
         </div>
       </div>
-    </section>
+    
 
 
     <!-- Set Booking Information -->
-    <section class="container mt-10">
+    <div class="container mt-10">
       <div class="w-3/4 flex mx-auto gap-10">
 
         <div class="  w-[60%] space-y-4">
@@ -229,18 +213,18 @@
 
             <div class="flex gap-16">
               <div><button class="btn w-20 bg-white">A</button></div>
-              <div onclick="buyTicket()" class=""><button class="btn w-20">A1</button></div>
-              <div onclick="buyTicket()" class=""><button class="btn w-20">A2</button></div>
-              <div onclick="buyTicket()" class=""><button class="btn w-20">A3</button></div>
-              <div onclick="buyTicket()" class=""><button class="btn w-20">A4</button></div>
+              <div><button class="btn w-20">A1</button></div>
+              <div><button class="btn w-20">A2</button></div>
+              <div><button class="btn w-20">A3</button></div>
+              <div><button class="btn w-20">A4</button></div>
             </div>
 
             <div class="flex gap-16">
               <div><button class="btn w-20 bg-white">B</button></div>
-              <div onclick="buyTicket()"><button class="btn w-20">B1</button></div>
-              <div onclick="buyTicket()"><button class="btn w-20">B2</button></div>
-              <div onclick="buyTicket()"><button class="btn w-20">B3</button></div>
-              <div onclick="buyTicket()"><button class="btn w-20">B4</button></div>
+              <div><button class="btn w-20">B1</button></div>
+              <div><button class="btn w-20">B2</button></div>
+              <div><button class="btn w-20">B3</button></div>
+              <div><button class="btn w-20">B4</button></div>
             </div>
             <div class="flex gap-16">
               <div><button class="btn w-20 bg-white">C</button></div>
@@ -381,39 +365,36 @@
           </div>
         </div>
       </div>
-    </section>
-    
-      
-        
-        <footer class="footer mt-10 p-10 bg-neutral text-neutral-content ">
-          <!-- footer start -->
-         
-          <aside>
-           
-            <p><span class="raleway-font text-4xl font-bold text-white">P-Ticket</span>
-              <br><span class="inter-font text-lg font-normal">P-Ticket is a digital platform to make your</span> 
-              <br> <span class="inter-font text-lg font-normal">daily commuting better.</span></p>
-          </aside> 
-          <nav>
-            <h6 class="footer-title">Download our app</h6> 
-            <div class="flex gap-4">
-              <div>
-                <img src="./images/playstore.png" alt="">
-              </div>
-              <div>
-                <p>Get it on</p>
-                <p class="inter-font text-lg font-normal">Google Play</p>
-              </div>
-            </div>
-          </nav>
+    </div>
 
-         
-         
-         <!-- footer end -->
-        </footer>
-       
-      
-    
+
+    <footer class="footer mt-10 p-10 bg-neutral text-neutral-content ">
+      <!-- footer start -->
+
+      <aside>
+
+        <p><span class="raleway-font text-4xl font-bold text-white">P-Ticket</span>
+          <br><span class="inter-font text-lg font-normal">P-Ticket is a digital platform to make your</span>
+          <br> <span class="inter-font text-lg font-normal">daily commuting better.</span>
+        </p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Download our app</h6>
+        <div class="flex gap-4">
+          <div>
+            <img src="./images/playstore.png" alt="">
+          </div>
+          <div>
+            <p>Get it on</p>
+            <p class="inter-font text-lg font-normal">Google Play</p>
+          </div>
+        </div>
+      </nav>
+      <!-- footer end -->
+    </footer>
+  </section>
+
+
 
     <script src="./script-js/index.js"></script>
 </body>
