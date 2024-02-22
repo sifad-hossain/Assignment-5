@@ -100,14 +100,14 @@
 
 
 
-// const allBtn = document.getElementsByClassName('add-btn');
+// const allBtns = document.getElementById('seat-btn');
 // // console.log(allBtn);
 
-// let count = 40;
+// let counts = 0;
 // for (const btn of allBtn) {
 //     btn.addEventListener('click', function () {
-//         count = count - 1;
-//         document.getElementById('ticket-btn').innerText = count;
+//         counts = counts + 1;
+//         document.getElementById('seat-btn').innerText = counts;
 //     })
 // }
 
