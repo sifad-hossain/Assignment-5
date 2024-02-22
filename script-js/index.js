@@ -1,7 +1,7 @@
 
 
 const allBtn = document.getElementsByClassName('add-btn')
-let count = 8;
+let count = 40;
 let seat = 0;
 
 // let updatedBtn =0;
