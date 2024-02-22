@@ -38,3 +38,16 @@
   font-weight: 900;
   font-style: normal;
 }
+
+
+
+li{
+  display: flex;
+  justify-content:space-between;
+  
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  list-style: numeric;
+  
+}
