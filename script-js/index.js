@@ -4,19 +4,19 @@ const allBtn = document.getElementsByClassName('add-btn')
 let count = 40;
 let seat = 0;
 
-let updatedBtn =0;
+let updatedBtn = 0;
 
 
 for (const btn of allBtn) {
     btn.addEventListener('click', function (e) {
-        if(seat == 4){
+        if (seat == 4) {
             return alert('your seat end')
         }
 
-       
 
-  updatedBtn = updatedBtn + 1;
-  document.getElementById('seat-btn').innerText = updatedBtn
+
+        updatedBtn = updatedBtn + 1;
+        document.getElementById('seat-btn').innerText = updatedBtn
 
 
 
@@ -30,7 +30,7 @@ for (const btn of allBtn) {
         const price = 550;
         const name = 'Economoy';
         const btnName = document.getElementsByClassName('btn-name');
-       
+
 
         const li = document.createElement('li');
 
@@ -62,8 +62,8 @@ for (const btn of allBtn) {
 
 
         setInnerText('total-cost', sum);
-        setInnerText('grand-total', sum2);        
-       setInnerText('ticket-btn', count);
+        setInnerText('grand-total', sum2);
+        setInnerText('ticket-btn', count);
     })
 }
 
