@@ -4,7 +4,7 @@ const allBtn = document.getElementsByClassName('add-btn')
 let count = 40;
 let seat = 0;
 
-// let updatedBtn =0;
+let updatedBtn =0;
 
 
 for (const btn of allBtn) {
@@ -15,8 +15,9 @@ for (const btn of allBtn) {
 
        
 
-//   updatedBtn = updatedBtn + 1;
-//   console.log(updatedBtn);
+  updatedBtn = updatedBtn + 1;
+  document.getElementById('seat-btn').innerText = updatedBtn
+
 
 
         seat = seat + 1;
