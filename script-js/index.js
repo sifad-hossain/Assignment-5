@@ -1,5 +1,3 @@
-
-
 const allBtn = document.getElementsByClassName('add-btn')
 let count = 40;
 let seat = 0;
@@ -12,7 +10,6 @@ for (const btn of allBtn) {
         if (seat == 4) {
             return alert('your seat end')
         }
-
 
 
         updatedBtn = updatedBtn + 1;
@@ -70,134 +67,4 @@ for (const btn of allBtn) {
 function setInnerText(id, value) {
     document.getElementById(id).innerText = value;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// eita hoilo first rule:
-
-// function buyTicket() {
-//     //Step-1: Hide the Home Screen. To hide the screen  add the class hiden to the home section
-//     const busSection = document.getElementById('bus-container');
-//     // console.log(busSection.classList);
-//     busSection.classList.add('hidden');
-//     //Step-2:Show the Bus Paribhon
-//     const busTicketSale = document.getElementById('ticket-sale');
-//     // console.log(busTicketSale.classList);
-//     busTicketSale.classList.remove('hidden');
-// }
-
-
-
-// eita hoilo second rule:
-
-// function hideElementById(elementId) {
-//     const element = document.getElementById(elementId);
-//     element.classList.add('hidden');
-// }
-
-// function showElementById(elementId) {
-//     const element = document.getElementById(elementId);
-//     element.classList.remove('hidden');
-// }
-
-
-
-// function buyTicket() {
-//     hideElementById('bus-container');
-//     showElementById('ticket-sale');
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function ticketSale(name) {
-//     console.log(name);
-//     // const firstTicket = document.getElementById('A1');
-
-// //    firstTicket.innerText = '';
-// //    setBackgrounColorById('A1');
-// //    setBackgrounColorById('A2');
-// //    setBackgrounColorById('A3');
-// //    setBackgrounColorById('A4');
-// }
-
-
-// function setBackgrounColorById(elementId) {
-//     const element = document.getElementById(elementId);
-//     element.classList.add('bg-[#1dd100]')
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const allBtns = document.getElementById('seat-btn');
-// // console.log(allBtn);
-
-// let counts = 0;
-// for (const btn of allBtn) {
-//     btn.addEventListener('click', function () {
-//         counts = counts + 1;
-//         document.getElementById('seat-btn').innerText = counts;
-//     })
-// }
-
 
