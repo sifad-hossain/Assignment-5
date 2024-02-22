@@ -113,12 +113,18 @@
 
 const allBtn = document.getElementsByClassName('add-btn')
 let count = 8;
+let seat = 0;
+
 
 for (const btn of allBtn) {
     btn.addEventListener('click', function (e) {
+        if(seat == 4){
+            return alert('end function')
+        }
+        seat = seat + 1;
         count = count - 1;
-
-
+        this.disabled = true;
+        e.target.style.backgroundColor = ['#1dd100'];
 
         const selectedContainer = document.getElementById('selected-place-container');
 
@@ -130,7 +136,7 @@ for (const btn of allBtn) {
         const li = document.createElement('li');
 
         const p = document.createElement('p');
-        p.innerText = btnName;
+        p.innerText = this.innerText;
         const p2 = document.createElement('p2');
         p2.innerText = name;
 
